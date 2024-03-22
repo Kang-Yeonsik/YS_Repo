@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>설문조사 양식</title>
+</head>
+<body>
+   <header>
+  <h1>설문조사 양식</h1>
+  <p>모든 항목에 빠짐없이 체크해주십시오.</p>
+</header>
+  <hr>
+  <main>
+  <form> 
+    <fieldset>
+        <legend>개인정보</legend>
+
+        <label for="name">이름</label>
+        <input type="text" 
+        name="name" 
+        id="name" placeholder="본명을 입력하세요">
+        <br>
+        <label for="email">이메일</label>
+        <input type="email" 
+        name="email" 
+        id="email" placeholder="메일 주소 쓰세요">
+    </fieldset>
+    <fieldset>
+        <legend>설문</legend>
+
+        <p>거주하시는 지역이 어디신가요?</p>
+        <input type="radio" id="Seoul" name="city">
+        <label for="Seoul">서울</label>
+        <input type="radio" id="Busan" name="city">
+        <label for="Busan">부산</label>
+        <input type="radio" id="Daejeon" name="city">
+        <label for="Daejeon">대전</label>
+        <input type="radio" id="Incheon" name="city">
+        <label for="Incheon">인천</label>
+        <input type="radio" id="other" name="city">
+        <label for="other">그 외</label>
+
+    </fieldset>
+    <fieldset>
+        <legend>그 외 를 선택하셨을 경우 거주하시는 지역을 입력해주세요.</legend>
+        <textarea rows="3" cols="30" name="comment"></textarea>
+    </fieldset>
+    <input type="submit">
+  </form>  
+</main>
+  <hr>
+  <footer>
+  <p>입력하느라 수고하셨습니다.</p>
+</footer>
+</body>
+</html>
